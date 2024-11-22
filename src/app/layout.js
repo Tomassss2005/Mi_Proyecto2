@@ -1,6 +1,5 @@
 // src/app/layout.js
 'use client'; // Marca este archivo como componente cliente
-
 import { useEffect, useState } from 'react';
 import './globals.css';
 
