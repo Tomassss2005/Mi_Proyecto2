@@ -1,27 +1,29 @@
-// src/app/layout.js
-'use client'; // Marca este archivo como componente cliente
-import { useEffect, useState } from 'react';
-import './globals.css';
+'use client';
+import { useState, useEffect } from 'react';
+import styles from "./styles/layout.css";
+import Inicio from "./components/inicio.jsx";
+import Footer from "./components/footer.jsx";
 
-
-
-export default function RootLayout({ children }) {
+const Layout = ({ children }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Esto se ejecuta solo en el cliente
+    setIsClient(true);
   }, []);
 
   if (!isClient) {
-    return <div>Loading...</div>; // Muestra un cargando mientras se monta el cliente
+    return <div className={`div_layout ${styles.div_layout}`}>Cargando...</div>;
   }
 
   return (
     <html lang="es">
       <body>
+        <Inicio />
         {children}
+        <Footer />
       </body>
     </html>
-  );
-}
+  )
+};
 
+export default Layout;

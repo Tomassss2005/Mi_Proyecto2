@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/consejos.css";
 
 const faqs = [
     {
@@ -34,19 +35,19 @@ function Consejos() {
     };
 
     return (
-        <section id="faq" className="section-consejos">
-            <h2 className="h2-consejos">Consejos para pacientes</h2>
-            <div className="div-consejos">
+        <section id="faq" className={`section_consejos ${styles.section_consejos}`}>
+            <h2 className={`h2_consejos ${styles.h2_consejos}`}>Consejos para pacientes</h2>
+            <div className={`div_consejos ${styles.div_consejos}`}>
                 {faqs.map((faq, index) => (
-                    <div key={faq.id} className="consejos-item">
+                    <div key={faq.id} className={`consejos_item ${styles.consejos_item}`}>
                         <button
                             onClick={() => toggleQuestion(index)}
-                            className="button-consejos"
+                            className={`button_consejos ${styles.button_consejos}`}
                         >
                             {faq.question}
                         </button>
                         {openQuestion === index && (
-                            <div className="description-consejos">
+                            <div className={`description_consejos ${styles.description_consejos}`}>
                                 {/* Si el ítem tiene un array de 'items' */}
                                 {faq.items ? (
                                     <ul>

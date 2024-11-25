@@ -15,7 +15,7 @@ function Footer() {
                     <h3 className={`footer_h3 ${styles.footer_h3}`}>Enlaces Rápidos</h3>
                     <ul className={`ul_footer ${styles.ul_footer}`}>
                         <li className={`li_footer ${styles.li_footer}`}>
-                            <Link className={`a_footer_ul ${styles.a_footer_ul}`} href="/page">
+                            <Link className={`a_footer_ul ${styles.a_footer_ul}`} href="/">
                                 <FontAwesomeIcon className={`logo_home ${styles.logo_home}`} icon={faHome} size="2x" />Home
                             </Link>
                         </li>
@@ -40,7 +40,7 @@ function Footer() {
             </div>
             <p className={`copy_footer ${styles.copy_footer}`}>Todos los derechos reservados <strong>&copy;</strong>{new Date().getFullYear()}</p>
             <hr className={`hr_footer ${styles.hr_footer}`} />
-            <Link href="/mi-perfil" className={`mi_perfil ${styles.mi_perfil}`}><strong className={`mi_perfil_nombre ${styles.mi_perfil_nombre}`}>TomDevX</strong> <strong className="mi-perfil-nombre">by Tomás de la Peña</strong></Link>
+            <Link href="/mi-perfil" className={`mi_perfil ${styles.mi_perfil}`}><strong className={`mi_perfil_nombre ${styles.mi_perfil_nombre}`}>TomDevX</strong> <strong className={`mi_perfil_Tom ${styles.mi_perfi_Tom}`}>by Tomás de la Peña</strong></Link>
         </footer>
     )
 }

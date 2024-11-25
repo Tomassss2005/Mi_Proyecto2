@@ -4,7 +4,6 @@
     background-color: #2d2d2d;
     color: white;
     padding: 20px;
-    margin-top: 60px;
 }
 
 .footer_container {
@@ -43,7 +42,7 @@
     margin-bottom: 10px;
 }
 
-.a_footer-ul {
+.a_footer_ul {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -76,8 +75,8 @@
 }
 
 .a_p_footer:hover,
-.a_p_footer-2:hover,
-.a_p_footer-3:hover {
+.a_p_footer_2:hover,
+.a_p_footer_3:hover {
     color: #ccc;
 }
 
@@ -115,29 +114,29 @@
     font-family: 'CAELUM', sans-serif;
 }
 
-.mi_perfil_Tom {
-    list-style: none;
-    text-decoration: none;
-    font-size: 16px;
-    color: #bd9c41;
-    margin-right: 10px;
-}
-
-.mi_perfil_Tom:hover {
-    color: #FFCA28;
-    transition: transform 1s ease;
-    transform: scale(1.1);
-}
-
 .mi_perfil_nombre {
     list-style: none;
     text-decoration: none;
     font-size: 16px;
+    margin-right: 10px;
     color: rgb(166, 158, 158);
 }
 
 .mi_perfil_nombre:hover {
     color: rgb(193, 190, 190);
+    transition: transform 1s ease;
+    transform: scale(1.1);
+}
+
+.mi_perfil_Tom {
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #bd9c41;
+}
+
+.mi_perfil_Tom:hover {
+    color: #FFCA28;
     transition: transform 1s ease;
     transform: scale(1.1);
 }

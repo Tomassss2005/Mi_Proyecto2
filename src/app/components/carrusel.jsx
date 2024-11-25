@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from "react";
+import carrusel from "../styles/carrusel.css";
 
 const Carrusel = () => {
     const images = [
@@ -31,22 +32,22 @@ const Carrusel = () => {
 
 
     return (
-        <div className="carrusel">
-            <div className="carrusel-item" style={{ display: currentImageIndex === 0 ? 'block' : 'none' }}>
-                <img className="imagenes-carrusel" src={images[0].src} alt="Imagen 1" />
-                <p className={`carrusel-description-p ${images[0].className}`}>
+        <div className={`carrusel ${styles.carrusel}`}>
+            <div className={`carrusel_item ${styles.carrusel_item}`} style={{ display: currentImageIndex === 0 ? 'block' : 'none' }}>
+                <img className={`imagenes_carrusel ${styles.imagenes_carrusel}`} src={images[0].src} alt="Imagen 1" />
+                <p className={`carrusel_description_p ${images[0].className}`}>
                     {images[0].description}
                 </p>
             </div>
             <div className="carrusel-item" style={{ display: currentImageIndex === 1 ? 'block' : 'none' }}>
-                <img className="imagenes-carrusel" src={images[1].src} alt="Imagen 2" />
-                <p className={`carrusel-description-p ${images[1].className}`}>
+                <img className={`imagenes_carrusel ${styles.imagenes_carrusel}`} src={images[1].src} alt="Imagen 2" />
+                <p className={`carrusel_description_p ${images[1].className}`}>
                     {images[1].description}
                 </p>
             </div>
-            <div className="carrusel-item" style={{ display: currentImageIndex === 2 ? 'block' : 'none' }}>
-                <img className="imagenes-carrusel" src={images[2].src} alt="Imagen 3" />
-                <p href="/tratamientos" className={`carrusel-description-p ${images[2].className}`}>
+            <div className={`carrusel_item ${styles.carrusel_item}`} style={{ display: currentImageIndex === 2 ? 'block' : 'none' }}>
+                <img className={`imagenes_carrusel ${styles.imagenes_carrusel}`} src={images[2].src} alt="Imagen 3" />
+                <p href="/tratamientos" className={`carrusel_description_p ${images[2].className}`}>
                     {images[2].description}
                 </p>
             </div>

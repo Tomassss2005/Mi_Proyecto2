@@ -4,20 +4,20 @@ import Link from "next/link";
 
 function Tratamientos() {
     return (
-        <div className="tratamientos-big-container">
-            <h1 className="titulo-tratamientos">Algunos de nuestros tratamientos</h1>
-            <div className="tratamientos-container">
-                <div className="tratamiento">
-                    <img className="img-trats" src="/primer-tratamiento.jpg" alt="Tratamiento 1" />
-                    <Link href="/plasma-rico-en-plaquetas" className="a-trats">Plasma rico en plaquetas</Link>
+        <div className={`tratamientos_big_container ${styles.tratamientos_big_container}`}>
+            <h1 className={`titulo_tratamientos ${styles.titulo_tratamientos}`}>Algunos de nuestros tratamientos</h1>
+            <div className={`tratamientos_container ${styles.tratamientos_container}`}>
+                <div className={`tratamiento ${styles.tratamiento}`}>
+                    <img className={`img_tratatamientos ${styles.img_tratamientos}`} src="/primer-tratamiento.jpg" alt="Tratamiento 1" />
+                    <Link href="/plasma-rico-en-plaquetas" className={`a_tratamientos ${styles.a_tratamientos}`}>Plasma rico en plaquetas</Link>
                 </div>
-                <div className="tratamiento">
-                    <img className="img-trats" src="/segundo-tratamiento.avif" alt="Tratamiento 2" />
-                    <Link href="/peeling-facial" className="a-trats">Peeling facial</Link>
+                <div className={`tratamiento ${styles.tratamiento}`}>
+                    <img className={`img_tratatamientos ${styles.img_tratamientos}`} src="/segundo-tratamiento.avif" alt="Tratamiento 2" />
+                    <Link href="/peeling-facial" className={`a_tratamientos ${styles.a_tratamientos}`}>Peeling facial</Link>
                 </div>
-                <div className="tratamiento">
-                    <img className="img-trats" src="/tercer-tratamiento.jpg" alt="Tratamiento 3" />
-                    <Link href="/toxina-botulinica" className="a-trats">Toxina botulínica</Link>
+                <div className={`tratamiento ${styles.tratamiento}`}>
+                    <img className={`img_tratatamientos ${styles.img_tratamientos}`} src="/tercer-tratamiento.jpg" alt="Tratamiento 3" />
+                    <Link href="/toxina-botulinica" className={`a_tratamientos ${styles.a_tratamientos}`}>Toxina botulínica</Link>
                 </div>
             </div>
         </div>
