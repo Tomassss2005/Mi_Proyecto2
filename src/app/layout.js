@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import styles from "./styles/layout.css";
-import Inicio from "./components/inicio.jsx";
-import Footer from "./components/footer.jsx";
+
+
 
 const Layout = ({ children }) => {
   const [isClient, setIsClient] = useState(false);
@@ -18,9 +18,10 @@ const Layout = ({ children }) => {
   return (
     <html lang="es">
       <body>
-        <Inicio />
+
         {children}
-        <Footer />
+        hola
+
       </body>
     </html>
   )
